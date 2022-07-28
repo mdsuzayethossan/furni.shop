@@ -1,0 +1,77 @@
+header{
+    nav.navbar {
+        transition: all linear .4s;
+        -webkit-transition: all linear .4s;
+        -moz-transition: all linear .4s;
+        -ms-transition: all linear .4s;
+        -o-transition: all linear .4s;
+        padding: 20px 0;
+        
+        .navbar-brand {
+            color: $common-color;
+            font-size: 26px;
+            font-weight: 700;
+        }
+
+    .navbar-collapse {
+        .navbar-nav {
+            .nav-item {
+                .nav-link  {
+                    font-family: $font-family-one;
+                    font-weight: 500;
+                    padding: 0 30px;
+                    @include for-phone-only {
+                        padding: 10px 0;
+                        margin: 5px 0;
+
+                        &:hover {
+                            background-color: #244D4D;
+                            color: white;
+                            padding-left: 15px;
+
+                        }
+                     
+                    }
+                    @include for-tablet-portrait-up {
+                        padding: 10px 0;
+                        margin: 5px 0;
+                        margin-left: 10px;
+
+                        &:hover {
+                            background-color: #244D4D;
+                            color: white;
+                            padding-left: 15px;
+
+                        }
+                     
+                    }
+
+                }
+
+            }
+
+        }
+        form {
+            i {
+                color: #242424;
+            }
+            .fa-magnifying-glass {
+                margin-right: 44px;
+            }
+
+        }
+
+    }
+}
+}
+.position-fixed {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+    z-index: 9999;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}

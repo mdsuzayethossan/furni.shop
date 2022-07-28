@@ -1,0 +1,44 @@
+#hot {
+    margin-top: 140px;
+    padding: 30px;
+    .container {
+        .hot-main {
+            h2 {
+                font-weight: 700;
+                font-size: 50px;
+                color: $common-color;
+                span {
+
+                }
+                img {
+                    
+                    width: 11.24px;
+                    height: 16.98px;
+                    margin-left: 12px;
+
+                }
+            }
+            p {
+                @include p-tag;
+            }
+            .hot-item {
+                @include for-phone-only {
+                    text-align: center;
+                    margin: 15px 0;
+                }
+                img {
+
+                }
+                h4 {
+                    padding-top: 18px;
+
+                }
+                p {
+                    @include p-tag;
+                    padding-top: 18px;
+                    padding-right: 6vw;
+                }
+            }
+        }
+    }
+}

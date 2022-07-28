@@ -1,0 +1,86 @@
+#about {
+    padding-top: 200px;
+    .container {
+        .about-header-left {
+            @include for-phone-only {
+                text-align: center;
+            }
+           
+            h2 {
+                font-weight: 700;
+                font-size: 50px;
+            }
+            p {
+                @include p-tag;
+                padding-right: 34vw;
+                @include for-phone-only {
+                    text-align: center;
+                    padding-right: 0;
+                }
+            }
+
+        }
+        .about-header-right {
+
+         p {
+            @include for-phone-only {
+                text-align: center;
+                margin: 30px auto;
+            }
+            a {
+                padding: 15px;
+                text-decoration: none;
+                color: #5F5F64;
+                background-color: #F4F6F6;
+                box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+              
+            }
+         }
+        }
+       .about-article {
+        .about-article-item {
+            @include for-phone-only {
+                text-align: center;
+            }
+            margin: 25px 0;
+            article {
+                h3 {
+                    font-family: $font-family-two;
+                    font-weight: 700;
+                    font-size: 24px
+                    span {
+                    
+                    }
+
+                }
+                p {
+                    @include p-tag;
+         
+            }
+
+            }
+       
+          
+        }
+       }
+       .about-product-gallery {
+        text-align: center;
+        @include for-phone-only {
+            margin-bottom: 30px;
+        }
+       }
+       .about-product-gallery:nth-child(1) {
+        margin-top: 45px;
+       }
+       .about-product-gallery:nth-child(2) {
+        margin-bottom: 25px;
+        @include for-phone-only {
+            margin-bottom: 100px;
+        }
+       }
+       .about-product-gallery:nth-child(3) {
+        margin-top: -70px;
+       }
+    }
+
+}
